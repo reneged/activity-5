@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @mobile.name %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @mobile.brand %>
+</p>
+
+<p>
+  <strong>Year released:</strong>
+  <%= @mobile.year_released %>
+</p>
+
+<p>
+  <strong>Camera:</strong>
+  <%= @mobile.camera %>
+</p>
+
+<p>
+  <strong>Mpixel:</strong>
+  <%= @mobile.mpixel %>
+</p>
+
+<p>
+  <strong>Internalstorage:</strong>
+  <%= @mobile.internalstorage %>
+</p>
+
+<p>
+  <strong>Simslots:</strong>
+  <%= @mobile.simslots %>
+</p>
+
+<p>
+  <strong>Screen size:</strong>
+  <%= @mobile.screen_size %>
+</p>
+
+<p>
+  <strong>Os:</strong>
+  <%= @mobile.os %>
+</p>
+
+<p>
+  <strong>Stock num:</strong>
+  <%= @mobile.stock_num %>
+</p>
+
+<%= link_to 'Edit', edit_mobile_path(@mobile) %> |
+<%= link_to 'Back', mobiles_path %> |
+<td><%= link_to 'Destroy', @mobile, method: :delete, data: { confirm: 'Are you sure?' } %></td>

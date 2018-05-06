@@ -1,0 +1,67 @@
+<%= form_with(model: mobile, local: true) do |form| %>
+  <% if mobile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mobile.errors.count, "error") %> prohibited this mobile from being saved:</h2>
+
+      <ul>
+      <% mobile.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand %>
+    <%= form.text_field :brand %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_released %>
+    <%= form.text_field :year_released %>
+  </div>
+
+  <div class="field">
+    <%= form.label :camera %>
+    <%= form.text_field :camera %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mpixel %>
+    <%= form.text_field :mpixel %>
+  </div>
+
+  <div class="field">
+    <%= form.label :internalstorage %>
+    <%= form.number_field :internalstorage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :simslots %>
+    <%= form.number_field :simslots %>
+  </div>
+
+  <div class="field">
+    <%= form.label :screen_size %>
+    <%= form.text_field :screen_size %>
+  </div>
+
+  <div class="field">
+    <%= form.label :os %>
+    <%= form.text_field :os %>
+  </div>
+
+  <div class="field">
+    <%= form.label :stock_num %>
+    <%= form.number_field :stock_num %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
